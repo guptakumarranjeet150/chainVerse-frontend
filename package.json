@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "install:all": "npm ci --workspaces",
-    "dev": "npm run dev --workspace frontend-v2",
-    "build": "npm run build --workspace frontend-v2",
+    "dev": "node init && npm run dev --workspace frontend-v2",
+    "build": "node init && npm run build --workspace frontend-v2",
     "lint": "npm run lint --workspace frontend-v2",
     "typecheck": "npm exec --workspace frontend-v2 -- tsc --noEmit",
     "test": "npm run test --workspace frontend-v2",
